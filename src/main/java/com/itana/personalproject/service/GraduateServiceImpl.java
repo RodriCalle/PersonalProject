@@ -33,7 +33,7 @@ public class GraduateServiceImpl implements IGraduateService {
             graduate.setSex(graduateDetails.getSex());
             graduate.setTypeOfCourse(graduateDetails.getTypeOfCourse());
             graduate.setNoOfGraduates(graduateDetails.getNoOfGraduates());
-            return graduate;
+            return graduateRepository.save(graduate);
         }).orElseThrow(() -> new ResourceNotFoundException("Graduate", "id", id));
     }
 

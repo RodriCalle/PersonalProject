@@ -1,18 +1,16 @@
 package com.itana.personalproject.resource;
 
-import java.time.Year;
-
 public class SaveGraduateResource {
-    private Year year;
+    private int year;
     private String sex;
     private String typeOfCourse;
     private Long noOfGraduates;
 
-    public Year getYear() {
+    public int getYear() {
         return year;
     }
 
-    public SaveGraduateResource setYear(Year year) {
+    public SaveGraduateResource setYear(int year) {
         this.year = year;
         return this;
     }

@@ -43,8 +43,8 @@ public class GraduateController {
 
     @PutMapping("/graduation/{id}")
     public GraduateResource updateGraduate(@PathVariable Long id, @Valid @RequestBody SaveGraduateResource resource){
-        Graduate graduate = graduateService.updateGraduate(id, convertToEntity(resource));
-        return convertToResource(graduate);
+        Graduate graduate = convertToEntity(resource);
+        return convertToResource(graduateService.updateGraduate(id, graduate));
     }
 
     @DeleteMapping("/graduation/{id}")
