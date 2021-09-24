@@ -1,28 +1,18 @@
-package com.aitana.personalproject.resource;
+package com.itana.personalproject.resource;
 
 import java.time.Year;
 
-public class GraduateResource {
-    private Long id;
+public class SaveGraduateResource {
     private Year year;
     private String sex;
     private String typeOfCourse;
     private Long noOfGraduates;
 
-    public Long getId() {
-        return id;
-    }
-
-    public GraduateResource setId(Long id) {
-        this.id = id;
-        return this;
-    }
-
     public Year getYear() {
         return year;
     }
 
-    public GraduateResource setYear(Year year) {
+    public SaveGraduateResource setYear(Year year) {
         this.year = year;
         return this;
     }
@@ -31,7 +21,7 @@ public class GraduateResource {
         return sex;
     }
 
-    public GraduateResource setSex(String sex) {
+    public SaveGraduateResource setSex(String sex) {
         this.sex = sex;
         return this;
     }
@@ -40,7 +30,7 @@ public class GraduateResource {
         return typeOfCourse;
     }
 
-    public GraduateResource setTypeOfCourse(String typeOfCourse) {
+    public SaveGraduateResource setTypeOfCourse(String typeOfCourse) {
         this.typeOfCourse = typeOfCourse;
         return this;
     }
@@ -49,7 +39,7 @@ public class GraduateResource {
         return noOfGraduates;
     }
 
-    public GraduateResource setNoOfGraduates(Long noOfGraduates) {
+    public SaveGraduateResource setNoOfGraduates(Long noOfGraduates) {
         this.noOfGraduates = noOfGraduates;
         return this;
     }

@@ -1,4 +1,4 @@
-package com.aitana.personalproject;
+package com.itana.personalproject;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;

@@ -1,4 +1,4 @@
-package com.aitana.personalproject.exception;
+package com.itana.personalproject.exception;
 
 import org.springframework.web.bind.annotation.ResponseStatus;
 

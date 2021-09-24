@@ -1,12 +1,14 @@
-package com.aitana.personalproject.service;
+package com.itana.personalproject.service;
 
-import com.aitana.personalproject.domain.model.Graduate;
-import com.aitana.personalproject.domain.repository.IGraduateRepository;
-import com.aitana.personalproject.domain.service.IGraduateService;
-import com.aitana.personalproject.exception.ResourceNotFoundException;
+import com.itana.personalproject.domain.model.Graduate;
+import com.itana.personalproject.domain.repository.IGraduateRepository;
+import com.itana.personalproject.domain.service.IGraduateService;
+import com.itana.personalproject.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class GraduateServiceImpl implements IGraduateService {
@@ -41,5 +43,10 @@ public class GraduateServiceImpl implements IGraduateService {
             graduateRepository.delete(graduate);
             return ResponseEntity.ok().build();
         }).orElseThrow(() -> new ResourceNotFoundException("Graduate", "id", id));
+    }
+
+    @Override
+    public List<Graduate> getAllGraduates() {
+        return graduateRepository.findAll();
     }
 }

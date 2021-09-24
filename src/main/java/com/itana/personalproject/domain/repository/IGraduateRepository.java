@@ -1,6 +1,6 @@
-package com.aitana.personalproject.domain.repository;
+package com.itana.personalproject.domain.repository;
 
-import com.aitana.personalproject.domain.model.Graduate;
+import com.itana.personalproject.domain.model.Graduate;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

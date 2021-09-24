@@ -1,4 +1,4 @@
-package com.aitana.personalproject.domain.model;
+package com.itana.personalproject.domain.model;
 
 import javax.persistence.*;
 import java.time.Year;
