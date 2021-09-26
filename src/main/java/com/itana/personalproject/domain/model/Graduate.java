@@ -7,22 +7,22 @@ import javax.persistence.*;
 public class Graduate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name = "_id")
     private Long id;
 
-    @Column
+    @Column(name = "year")
     private int year;
 
-    @Column
+    @Column(name = "sex")
     private String sex;
 
-    @Column
+    @Column(name = "type_of_course")
     private String typeOfCourse;
 
-    @Column
-    private Long noOfGraduates;
+    @Column(name = "no_of_graduates")
+    private String noOfGraduates;
 
-    public Graduate(Long id, int year, String sex, String typeOfCourse, Long noOfGraduates) {
+    public Graduate(Long id, int year, String sex, String typeOfCourse, String noOfGraduates) {
         this.id = id;
         this.year = year;
         this.sex = sex;
@@ -66,11 +66,11 @@ public class Graduate {
         this.typeOfCourse = typeOfCourse;
     }
 
-    public Long getNoOfGraduates() {
+    public String getNoOfGraduates() {
         return noOfGraduates;
     }
 
-    public void setNoOfGraduates(Long noOfGraduates) {
+    public void setNoOfGraduates(String noOfGraduates) {
         this.noOfGraduates = noOfGraduates;
     }
 }

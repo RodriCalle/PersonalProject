@@ -5,7 +5,7 @@ public class GraduateResource {
     private int year;
     private String sex;
     private String typeOfCourse;
-    private Long noOfGraduates;
+    private String noOfGraduates;
 
     public Long getId() {
         return id;
@@ -43,11 +43,11 @@ public class GraduateResource {
         return this;
     }
 
-    public Long getNoOfGraduates() {
+    public String getNoOfGraduates() {
         return noOfGraduates;
     }
 
-    public GraduateResource setNoOfGraduates(Long noOfGraduates) {
+    public GraduateResource setNoOfGraduates(String noOfGraduates) {
         this.noOfGraduates = noOfGraduates;
         return this;
     }
