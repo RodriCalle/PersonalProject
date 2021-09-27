@@ -1,16 +1,16 @@
 package com.itana.personalproject.resource;
 
 public class SaveGraduateResource {
-    private int year;
+    private String year;
     private String sex;
     private String typeOfCourse;
     private String noOfGraduates;
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 
-    public SaveGraduateResource setYear(int year) {
+    public SaveGraduateResource setYear(String year) {
         this.year = year;
         return this;
     }

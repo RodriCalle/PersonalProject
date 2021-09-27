@@ -11,7 +11,7 @@ public class Graduate {
     private Long id;
 
     @Column(name = "year")
-    private int year;
+    private String year;
 
     @Column(name = "sex")
     private String sex;
@@ -22,7 +22,7 @@ public class Graduate {
     @Column(name = "no_of_graduates")
     private String noOfGraduates;
 
-    public Graduate(Long id, int year, String sex, String typeOfCourse, String noOfGraduates) {
+    public Graduate(Long id, String year, String sex, String typeOfCourse, String noOfGraduates) {
         this.id = id;
         this.year = year;
         this.sex = sex;
@@ -42,11 +42,11 @@ public class Graduate {
         this.id = id;
     }
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(String year) {
         this.year = year;
     }
 

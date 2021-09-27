@@ -2,7 +2,7 @@ package com.itana.personalproject.resource;
 
 public class GraduateResource {
     private Long id;
-    private int year;
+    private String year;
     private String sex;
     private String typeOfCourse;
     private String noOfGraduates;
@@ -16,11 +16,11 @@ public class GraduateResource {
         return this;
     }
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 
-    public GraduateResource setYear(int year) {
+    public GraduateResource setYear(String year) {
         this.year = year;
         return this;
     }
